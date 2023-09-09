@@ -4,8 +4,8 @@ CREATE TABLE cliente (
     nome VARCHAR(100) NOT NULL,
     telefone VARCHAR(20) NOT NULL,
     nome_usuario VARCHAR(100) NOT NULL,
-    cpf VARCHAR(20) NOT NULL,
-    email VARCHAR(100) NOT NULL,
+    cpf VARCHAR(20) NOT NULL UNIQUE,
+    email VARCHAR(100) NOT NULL UNIQUE,
     data_nascimento DATE NOT NULL,
 	id_endereco INT
 );
@@ -29,7 +29,7 @@ CREATE TABLE pedido (
 CREATE TABLE funcionario (
     id SERIAL PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
-    cpf VARCHAR(100) NOT NULL
+    cpf VARCHAR(100) NOT NULL UNIQUE
 );
 
 CREATE TABLE categoria (
