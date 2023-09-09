@@ -5,11 +5,17 @@ Projeto final da disciplina de BD
 Precisa ter, segundo o conteúdo programático:
 
 ● Cliente
+
 ● Pedido
+
 ● PedidoItem
+
 ● Produto
+
 ● Categoria
+
 ● NotaFiscal
+
 ● Usuário
 
 E-commerce tradicional
